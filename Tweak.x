@@ -47,24 +47,8 @@
 
 	return %orig(dictionary, context);
 }
-
-/*
-
-// Commented since adding /do/search to PathPrefixes solves the issue
-
--(id)userVisibleQueryFromSearchURL:(NSURL *)searchURL allowQueryThatLooksLikeURL:(BOOL)allowQueryThatLooksLikeURL {
-	NSString *urlString = [searchURL absoluteString];
-	if ([urlString containsString:@"startpage.com/do/search"]) {
-		urlString = [urlString stringByReplacingOccurrencesOfString:@"startpage.com/do/search" withString:@"startpage.com/sp/search"];
-		searchURL = [NSURL URLWithString:urlString];
-	}
-
-	return %orig(searchURL, allowQueryThatLooksLikeURL);
-}*/
 %end
 
-
-// removes the "Related searches" section at the top of Startpage when on mobile
 %hook WKWebView
 -(void)_didFinishNavigation:(id *)arg1 {
 	%orig;
