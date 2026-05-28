@@ -1,7 +1,1 @@
-{
-	Filter = {
-		Classes = (
-			"WBSSearchProvider",
-		);
-	};
-}
+{ Filter = { Bundles = ( "com.apple.mobilesafari" ); }; }
