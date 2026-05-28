@@ -1,9 +1,9 @@
-Package: com.icraze.startpage
-Name: startpage
-Version: 1.0.1
-Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: iCraze
-Author: iCraze
+Package: com.mortyick.searxng
+Name: Safari SearXNG
+Description: A fork of iCraze's Startpage tweak, but its the version that uses SearXNG instead of Startpage.
+Maintainer: Mortyick
+Author: Mortyick, iCraze
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000)
+Architecture: iphoneos-arm64
+Version: 1.0
