@@ -7,9 +7,9 @@ INSTALL_TARGET_PROCESSES = MobileSafari
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = searxng
+TWEAK_NAME = 4get
 
-searxng_FILES = Tweak.x
-searxng_CFLAGS = -fobjc-arc
+4get_FILES = Tweak.x
+4get_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
