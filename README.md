@@ -1,3 +1,3 @@
-iOS jailbreak tweak to replace Google with SearXNG...?
+# i wouldnt use this if i were you
 
-You must have Google selected as the default search engine in Safari settings.
+the 4get instance i used has bot protection (in the form of an image captcha, albeit its different from the regular ones), and i didnt do much testing with this
