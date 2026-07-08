@@ -1,6 +1,6 @@
-Package: com.mortyick.searxng
-Name: Safari SearXNG
-Description: A fork of iCraze's Startpage tweak, but its the version that uses SearXNG instead of Startpage.
+Package: com.mortyick.4get
+Name: 4get
+Description: A fork of iCraze's Startpage tweak, but its the version that uses 4get instead of Startpage.
 Maintainer: Mortyick
 Author: Mortyick, iCraze
 Section: Tweaks
