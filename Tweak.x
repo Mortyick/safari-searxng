@@ -12,18 +12,18 @@
 		dictionary = @{
 			@"GroupIdentifierQueryStringKey": @"safari_group",
 			@"HomepageURLs": @[
-				@"https://opnxng.com"
+				@"https://4get.ca"
 			],
 			@"HostSuffixes": @[
-				@".opnxng.com"
+				@".4get.ca"
 			],
-			@"LocalizedName": @"SearXNG", // shows above suggested results in Safari
+			@"LocalizedName": @"4get", // shows above suggested results in Safari
 			@"ParsecSearchEndpointType": @2,
 			@"ParsecSearchIdentifier": @"google_search",
 			@"ParsecSearchResultType": @9,
 			@"ParsecSearchSuggestionIdentifier": @"google_comp",
 			@"PathPrefixes": @[
-				@"/search"
+				@"/web"
 			],
 			// none/moderate/heavy
 			@"SafeSearchSuffix": @"&qadf=none",
@@ -32,12 +32,12 @@
 			},
 			@"ScriptingName": @"Google",
 			@"SearchEngineID": @2,
-			@"SearchEngineIdentifier": @"com.openxng",
-			@"SearchURLTemplate": @"https://opnxng.com/search?q={searchTerms}",
-			@"SearchURLTemplateIPad": @"https://opnxng.com/search?q={searchTerms}",
-			@"SearchURLTemplateIPhone": @"https://opnxng.com/search?q={searchTerms}",
-			@"SearchURLTemplateIPodTouch": @"https://opnxng.com/search?q={searchTerms}",
-			@"SearchURLTemplateMac": @"https://opnxng.com/search?q={searchTerms}",
+			@"SearchEngineIdentifier": @"ca.4get",
+			@"SearchURLTemplate": @"https://4get.ca/web?s={searchTerms}",
+			@"SearchURLTemplateIPad": @"https://4get.ca/web?s={searchTerms}",
+			@"SearchURLTemplateIPhone": @"https://4get.ca/web?s={searchTerms}",
+			@"SearchURLTemplateIPodTouch": @"https://4get.ca/web?s={searchTerms}",
+			@"SearchURLTemplateMac": @"https://4get.ca/web?s={searchTerms}",
 			@"ShortName": @"Google",
 			@"SuggestionsURLTemplate": @"https://www.startpage.com/osuggestions?q={searchTerms}",
 			@"SuggestionsURLTemplateMac": @"https://www.startpage.com/osuggestions?q={searchTerms}",
@@ -53,7 +53,7 @@
 -(void)_didFinishNavigation:(id *)arg1 {
 	%orig;
 
-	if ([self.URL.absoluteString containsString:@"openxng.com/"]) {
+	if ([self.URL.absoluteString containsString:@"4get.ca/"]) {
 		[self evaluateJavaScript:@"document.querySelector('span.attribution-text')?.textContent.trim() === 'Related searches' && document.querySelector('span.attribution-text')?.parentElement?.parentElement?.remove();" completionHandler:nil];
 	}
 }
